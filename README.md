@@ -46,3 +46,22 @@ intensity isn’t associated with a positive mood.
 • Cluster 3 (Vocal heavy/ Hip Hop): Contains tracks that are on average 5x more wordy
 than the other groups. Groups music that is high in wordiness, which encompasses
 rap/hip hop that is performed on top of instrumentation
+
+While the Elbow Method suggested an inflection point at k = 4, a Silhouette Analysis was
+performed to mathematically validate this choice.
+• Validation: The Silhouette Score was highest at k = 2 (0.336), indicating a broad split be-
+tween acoustic and electronic tracks. However, k = 4 (0.181) was selected as the "Sweet
+Spot," as it provided significantly more analytical depth than k = 2 while maintaining
+better separation than k = 5 (0.176).
+
+M3 EXPANSION: DECISION TREE DISCOVERY
+To move beyond the visual limitations of PCA (which captured 55.1% of variance), a De-
+cision Tree Classifier was implemented to audit the K-Means clusters in their original 11-
+dimensional space. This served as the primary analytical expansion for this milestone.
+• Rule Discovery: The tree identified Valence (≤ 0.47) as the root decision node, followed
+by Energy and Speechiness.
+• Cluster Validation: The tree successfully "mapped" the logic of our mood profiles,
+proving that high Energy distinguishes "Dark" tracks from "Acoustic" ones, while high
+Speechiness (> 0.26) is the definitive marker for the "Lyrical/Hip-Hop" segment.
+• Synthesis: This expansion confirms that our unsupervised clusters are grounded in
+clear, hierarchical audio rules that were previously obscured in the 2D PCA plot.
