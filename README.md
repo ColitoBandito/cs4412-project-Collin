@@ -65,3 +65,32 @@ proving that high Energy distinguishes "Dark" tracks from "Acoustic" ones, while
 Speechiness (> 0.26) is the definitive marker for the "Lyrical/Hip-Hop" segment.
 • Synthesis: This expansion confirms that our unsupervised clusters are grounded in
 clear, hierarchical audio rules that were previously obscured in the 2D PCA plot.
+
+6 EXECUTIVE SUMMARY
+The aim of this project is to look into the objective "audio fingerprints" of over 130,000 Spotify
+tracks in order to categorize them differently than traditional genre labels. By using the
+data mining techniques of K-Means clustering and PCA, the study finds four distinct mood
+profiles: Party, Acoustic, Dark and Lyrical. An important finding, confirmed from a Decision
+Tree Audit, showed that Valence (musical positivity) is the primary root split for musical
+classification. This supposes how a song makes you respond emotional is the driver of that
+songs identity. While DBSCAN validation gives confirmation that all tracks belong in a dense,
+continous cloud rather than rigid groupings, the identified mood profiles still give a solid
+framework for creating recommendation engines that are in alignment with a user’s real time
+emotional state.
+7 CONCLUSION
+7.1 Summary of Findings
+This study successfully mapped the underlying structure of Spotify’s audio structure by
+moving past genre labels and into more data-driven classification. Through the use of unsu-
+pervised learning on audio features, distinct Mood Profiles emerged that reflect consistent
+patterns in how tracks are constructed. The analysis shows that Energy and Acousticness
+primarily define the physical intensity of a track, while Valence operates as the key driver of
+emotional interpretation. Together, these features form a reliable foundation for distinguish-
+ing how music both sounds and feels
+7.2 Domain Implications
+Being able to mathematically define these mood-based segments has potentially significant
+implications for streaming platforms. A shift from the traditional genre approach to a more
+mood centric framework allows recommendation systems to better align with user context.
+Instead of only matching historical preferences, platforms can begin to account for a user’s
+current state or activity, whether that be studying, focusing, or socializing. This creates the
+potential for recommendation engines that are more adaptive or reflective of real time user
+intent.
